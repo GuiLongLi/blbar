@@ -1,0 +1,11 @@
+<style>
+	#nav_ul li{
+		float:left;margin-right:10px;
+	}
+</style>
+<ul id="nav_ul">
+	<% _.each(module,function(item) { %>
+		<li><a href="#<%=item['module'] %>"><%=item['name'] %></a></li>
+	<% }) %>
+</ul>
+<div class="clear_fix"></div>
